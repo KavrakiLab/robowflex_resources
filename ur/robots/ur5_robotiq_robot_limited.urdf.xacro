@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="ur5_robotiq85" >
+
+  <!-- common stuff -->
+  <xacro:include filename="common.gazebo.xacro" />
+
+  <!-- ur5 -->
+  <xacro:include filename="ur5.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:ur5_robot prefix="" joint_limited="true"/>
+
+  <link name="world" />
+
+<!-- box-->
+  <link name="box_link">
+    <visual>
+      <geometry>
+        <box size="0.762 1.524 0.9144"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.762 1.524 0.9144"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="100"/>
+      <inertia ixx="10" ixy="0.0" ixz="0.0" iyy="10" iyz="0.0" izz="10"/>
+    </inertial>
+  </link>
+
+<!-- attach the box to the world-->
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link="box_link" />
+    <origin xyz="0.0 0.0 0.4572" rpy="0.0 0.0 0.0" />
+  </joint>
+
+<!-- attach the robot to the box -->
+ <joint name="box_joint" type="fixed">
+    <parent link="box_link"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 -0.381 0.4572" rpy="0 0 1.57" />
+ </joint>
+
+ <!-- Force Torque Sensor -->
+ <xacro:include filename="$(find robowflex_resources)/robotiq/force_torque_sensor/urdf/robotiq_fts300.urdf.xacro" />
+
+ <xacro:robotiq_fts300 prefix="" parent="ee_link" >
+   <origin xyz="0.035 0 0.0" rpy="0.0 0 -1.57"/>
+ </xacro:robotiq_fts300>
+
+ <!-- GRIPPER -->
+ <!-- Import robotiq gazebo and gripper description -->
+ <!-- xacro:include filename="$(find robotiq_85_description)/urdf/robotiq_85_gripper.urdf.xacro" /-->
+ <xacro:include filename="$(find robowflex_resources)/robotiq/85_gripper/urdf/robotiq_arg85_description.urdf.xacro" />
+
+ <xacro:robotiq_85_gripper prefix="" parent="fts_toolside" >
+   <!-- origin xyz="0.0 0.0 -0.037" rpy="0.0 0.0 1.57"/-->
+   <origin xyz="0.0 0.0 -0.037" rpy="-1.57 3.1415 0.0"/>
+ </xacro:robotiq_85_gripper>
+
+<!--origin xyz="0.0 0 0.025" rpy="0.0 -1.57 1.57"/-->
+
+</robot>
