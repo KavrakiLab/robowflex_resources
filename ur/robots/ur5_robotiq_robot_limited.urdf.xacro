@@ -54,8 +54,8 @@
 
  <!-- GRIPPER -->
  <!-- Import robotiq gazebo and gripper description -->
- <!-- xacro:include filename="$(find robotiq_85_description)/urdf/robotiq_85_gripper.urdf.xacro" /-->
- <xacro:include filename="$(find robowflex_resources)/robotiq/85_gripper/urdf/robotiq_arg85_description.urdf.xacro" />
+ <xacro:include filename="$(find robowflex_resources)/robotiq/85_gripper/urdf/robotiq_85_gripper.urdf.xacro" />
+ <!-- <xacro:include filename="$(find robowflex_resources)/robotiq/85_gripper/urdf/robotiq_arg85_description.urdf.xacro" /> -->
 
  <xacro:robotiq_85_gripper prefix="" parent="fts_toolside" >
    <!-- origin xyz="0.0 0.0 -0.037" rpy="0.0 0.0 1.57"/-->

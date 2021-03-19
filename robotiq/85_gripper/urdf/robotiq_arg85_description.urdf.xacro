@@ -2,7 +2,7 @@
 
 <robot
   name="robotiq_85_gripper"  xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find robotiq_85_description)/robotiq/85_gripper/urdf/robotiq_85_gripper.transmission.xacro" />
+  <xacro:include filename="$(find robowflex_resources)/robotiq/85_gripper/urdf/robotiq_85_gripper.transmission.xacro" />
 	<xacro:property name="pi" value="3.14159"/>
   
   <xacro:macro name="robotiq_85_gripper" params="prefix parent *origin">
