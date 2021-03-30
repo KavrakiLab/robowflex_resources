@@ -1,0 +1,5 @@
+# ABB YuMi (IRB 14000)
+urdf: "package://robowflex_resources/yumi/urdf/yumi.urdf"
+srdf: "package://robowflex_resources/yumi/config/yumi.srdf"
+joint_limits: "package://robowflex_resources/yumi/config/joint_limits.yaml"
+kinematics: "package://robowflex_resources/yumi/config/kinematics.yaml"

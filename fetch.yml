@@ -1,0 +1,5 @@
+# Fetch robot
+urdf: "package://robowflex_resources/fetch/robots/fetch.urdf"
+srdf: "package://robowflex_resources/fetch/config/fetch.srdf"
+joint_limits: "package://robowflex_resources/fetch/config/joint_limits.yaml"
+kinematics: "package://robowflex_resources/fetch/config/kinematics.yaml"

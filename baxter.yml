@@ -1,0 +1,5 @@
+# Baxter robot
+urdf: "package://robowflex_resources/baxter/urdf/baxter.urdf.xacro"
+srdf: "package://robowflex_resources/baxter/config/baxter.srdf"
+joint_limits: "package://robowflex_resources/baxter/config/joint_limits.yaml"
+kinematics: "package://robowflex_resources/baxter/config/kinematics.yaml"
