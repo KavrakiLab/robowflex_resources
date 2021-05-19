@@ -3,7 +3,8 @@ urdf: "package://robowflex_resources/ur/robots/ur5_robotiq_robot_limited.urdf.xa
 srdf: "package://robowflex_resources/ur/config/ur5/ur5_robotiq85.srdf"
 joint_limits: "package://robowflex_resources/ur/config/ur5/joint_limits.yaml"
 kinematics: "package://robowflex_resources/ur/config/ur5/kinematics.yaml"
-#default robot state with hand open at tuck position
+
+# Default robot home state
 robot_state:
   joint_state:
     name: [shoulder_pan_joint, shoulder_lift_joint, elbow_joint, wrist_1_joint, wrist_2_joint, wrist_3_joint, robotiq_85_left_inner_knuckle_joint, robotiq_85_left_finger_tip_joint, robotiq_85_left_knuckle_joint, robotiq_85_right_inner_knuckle_joint, robotiq_85_right_finger_tip_joint, robotiq_85_right_knuckle_joint]
