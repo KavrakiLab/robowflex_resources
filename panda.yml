@@ -1,5 +1,5 @@
 # Franka Emika Panda robot with hand
-urdf: "package://robowflex_resources/panda/panda_description/urdf/panda.urdf"
+urdf: "package://robowflex_resources/panda/urdf/panda.urdf"
 srdf: "package://robowflex_resources/panda/config/panda.srdf"
 joint_limits: "package://robowflex_resources/panda/config/joint_limits.yaml"
 kinematics: "package://robowflex_resources/panda/config/kinematics.yaml"
