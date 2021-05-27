@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<robot name="kuka_shadowhand">
+    <group name="arm">
+        <link name="kuka_arm_1_link" />
+        <link name="kuka_arm_2_link" />
+        <link name="kuka_arm_3_link" />
+        <link name="kuka_arm_4_link" />
+        <link name="kuka_arm_5_link" />
+        <link name="kuka_arm_6_link" />
+        <link name="kuka_arm_7_link" />
+        <link name="wrist" />
+        <link name="palm" />
+    </group>
+    <group name="finger_ff">
+        <link name="ffknuckle" />
+        <link name="ffproximal" />
+        <link name="ffmiddle" />
+        <link name="ffdistal" />
+        <link name="fftip" />
+    </group>
+    <group name="finger_th">
+        <link name="KTHbase" />
+        <link name="thproximal" />
+        <link name="thhub" />
+        <link name="thmiddle" />
+        <link name="thdistal" />
+        <link name="thtip" />
+    </group>
+    <group name="finger_lf">
+        <link name="lfmetacarpal" />
+        <link name="lfknuckle" />
+        <link name="lfproximal" />
+        <link name="lfmiddle" />
+        <link name="lfdistal" />
+        <link name="lftip" />
+    </group>
+    <group name="finger_mf">
+        <link name="mfknuckle" />
+        <link name="mfproximal" />
+        <link name="mfmiddle" />
+        <link name="mfdistal" />
+        <link name="mftip" />
+    </group>
+    <group name="finger_rf">
+        <link name="rfknuckle" />
+        <link name="rfproximal" />
+        <link name="rfmiddle" />
+        <link name="rfdistal" />
+        <link name="rftip" />
+    </group>
+    <end_effector name="rf" parent_link="rftip" group="finger_rf" />
+    <end_effector name="mf" parent_link="mftip" group="finger_mf" />
+    <end_effector name="lf" parent_link="lftip" group="finger_lf" />
+    <end_effector name="ff" parent_link="fftip" group="finger_ff" />
+    <end_effector name="th" parent_link="thtip" group="finger_th" />
+</robot>
+

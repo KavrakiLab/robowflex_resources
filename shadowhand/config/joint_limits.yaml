@@ -1,0 +1,8 @@
+joint_limits:
+  kuka_arm_0_joint:
+    min_position: -2.96705972839
+    max_position: 2.96705972839
+    has_velocity_limits: true
+    max_velocity: 1.91986217719
+    has_acceleration_limits: false
+    max_acceleration: 0
