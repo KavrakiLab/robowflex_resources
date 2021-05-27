@@ -1,8 +1,249 @@
 joint_limits:
   kuka_arm_0_joint:
-    min_position: -2.96705972839
-    max_position: 2.96705972839
-    has_velocity_limits: true
-    max_velocity: 1.91986217719
-    has_acceleration_limits: false
-    max_acceleration: 0
+     min_position: -2.96705972839
+     max_position: 2.96705972839
+     has_velocity_limits: true
+     max_velocity: 1.91986217719
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_1_joint:
+     min_position: -1.57079632679
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.91986217719
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_2_joint:
+     min_position: -2.96705972839
+     max_position: 2.96705972839
+     has_velocity_limits: true
+     max_velocity: 2.26892802759
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_3_joint:
+     min_position: -2.09439510239
+     max_position: 2.09439510239
+     has_velocity_limits: true
+     max_velocity: 2.26892802759
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_4_joint:
+     min_position: -2.96705972839
+     max_position: 2.96705972839
+     has_velocity_limits: true
+     max_velocity: 2.26892802759
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_5_joint:
+     min_position: -1.49439510239
+     max_position: 1.70439510239
+     has_velocity_limits: true
+     max_velocity: 3.14159265359
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  kuka_arm_6_joint:
+     min_position: -2.96705972839
+     max_position: 2.96705972839
+     has_velocity_limits: true
+     max_velocity: 3.14159265359
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  WRJ2:
+     min_position: -0.5235987755982988
+     max_position: 0.17453292519943295
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  WRJ1:
+     min_position: -0.7853981633974483
+     max_position: 0.6108652381980153
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  FFJ4:
+     min_position: -0.4363323129985824
+     max_position: 0.4363323129985824
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  FFJ3:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  FFJ2:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  FFJ1:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  MFJ4:
+     min_position: -0.4363323129985824
+     max_position: 0.4363323129985824
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  MFJ3:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  MFJ2:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  MFJ1:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  RFJ4:
+     min_position: -0.4363323129985824
+     max_position: 0.4363323129985824
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  RFJ3:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  RFJ2:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  RFJ1:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  LFJ5:
+     min_position: 0.0
+     max_position: 0.6981317007977318
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  LFJ4:
+     min_position: -0.4363323129985824
+     max_position: 0.4363323129985824
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  LFJ3:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  LFJ2:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  LFJ1:
+     min_position: 0.0
+     max_position: 1.57079632679
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  KTHJ5:
+     min_position: -1.047
+     max_position: 1.047
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  THJ4:
+     min_position: 0.0
+     max_position: 1.309
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  THJ3:
+     min_position: -0.2618
+     max_position: 0.2618
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  THJ2:
+     min_position: -0.5237
+     max_position: 0.5237
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
+  THJ1:
+     min_position: 0.0
+     max_position: 1.571
+     has_velocity_limits: true
+     max_velocity: 1.0
+     has_acceleration_limits: true
+     max_acceleration: 0
+
