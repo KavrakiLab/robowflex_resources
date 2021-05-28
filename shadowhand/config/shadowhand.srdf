@@ -16,6 +16,14 @@
         <chain base_link="calib_kuka_arm_base_link" tip_link="rfdistal" />
     </group>
 
+    <group name="all_fingers">
+        <group name="finger_ff" />
+        <group name="finger_th" />
+        <group name="finger_lf" />
+        <group name="finger_mf" />
+        <group name="finger_rf" />
+    </group>
+
     <group name="finger_fftip">
         <link name="fftip" />
     </group>
@@ -31,6 +39,7 @@
     <group name="finger_rftip">
         <link name="rftip" />
     </group>
+
     <end_effector name="ff" parent_link="ffdistal" group="finger_fftip" parent_group="finger_ff" />
     <end_effector name="th" parent_link="thdistal" group="finger_thtip" parent_group="finger_th" />
     <end_effector name="lf" parent_link="lfdistal" group="finger_lftip" parent_group="finger_lf" />

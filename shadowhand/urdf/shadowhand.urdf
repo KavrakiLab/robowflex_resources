@@ -1047,10 +1047,5 @@
     <origin rpy="0 0 0" xyz="0 0 0.0275" />
   </joint>
 
-  <klampt package_root="../../.." flip_yz="1" default_acc_max="4" use_vis_geom="1" freeze_root_link="0">
-   <noselfcollision group1="palm" group2="ffproximal mfproximal rfproximal thproximal lfknuckle"/>
-   <noselfcollision group1="thproximal" group2="thmiddle"/>
-  </klampt>
-
 </robot>
 
