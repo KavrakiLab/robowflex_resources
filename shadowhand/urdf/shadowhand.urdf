@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="kuka_lwr">
+<robot name="shadowhand">
   <material name="Blue">
     <color rgba="0.0 0.0 0.8 1.0"/>
   </material>
