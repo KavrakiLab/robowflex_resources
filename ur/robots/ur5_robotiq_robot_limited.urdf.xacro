@@ -42,7 +42,7 @@
  <joint name="box_joint" type="fixed">
     <parent link="box_link"/>
     <child link="base_link"/>
-    <origin xyz="0.0 0.0 0.4572" rpy="0 0 1.57" />
+    <origin xyz="0.0 -0.381 0.4572" rpy="0 0 1.57" />
  </joint>
 
  <!-- Force Torque Sensor -->
