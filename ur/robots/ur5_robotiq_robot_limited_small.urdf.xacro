@@ -17,12 +17,12 @@
   <link name="box_link">
     <visual>
       <geometry>
-        <box size="0.762 1.524 0.9144"/>
+        <box size="0.4 0.4 0.9144"/>
       </geometry>
     </visual>
     <collision>
       <geometry>
-        <box size="0.762 1.524 0.9144"/>
+        <box size="0.4 0.4 0.9144"/>
       </geometry>
     </collision>
     <inertial>
