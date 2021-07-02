@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<robot name="shadowhand">
+    <group name="finger_ff">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="ffdistal" />
+    </group>
+    <group name="finger_th">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="thdistal" />
+    </group>
+    <group name="finger_lf">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="lfdistal" />
+    </group>
+    <group name="finger_mf">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="mfdistal" />
+    </group>
+    <group name="finger_rf">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="rfdistal" />
+    </group>
+    <group name="wrist">
+        <chain base_link="calib_kuka_arm_base_link" tip_link="wrist" />
+    </group>
+
+    <group name="all_fingers">
+        <group name="finger_ff" />
+        <group name="finger_th" />
+        <group name="finger_lf" />
+        <group name="finger_mf" />
+        <group name="finger_rf" />
+    </group>
+
+    <group name="finger_fftip">
+        <link name="fftip" />
+    </group>
+    <group name="finger_thtip">
+        <link name="thtip" />
+    </group>
+    <group name="finger_lftip">
+        <link name="lftip" />
+    </group>
+    <group name="finger_mftip">
+        <link name="mftip" />
+    </group>
+    <group name="finger_rftip">
+        <link name="rftip" />
+    </group>
+
+    <end_effector name="ff" parent_link="ffdistal" group="finger_fftip" parent_group="finger_ff" />
+    <end_effector name="th" parent_link="thdistal" group="finger_thtip" parent_group="finger_th" />
+    <end_effector name="lf" parent_link="lfdistal" group="finger_lftip" parent_group="finger_lf" />
+    <end_effector name="mf" parent_link="mfdistal" group="finger_mftip" parent_group="finger_mf" />
+    <end_effector name="rf" parent_link="rfdistal" group="finger_rftip" parent_group="finger_rf" />
+
+    <virtual_joint name="virtual_joint" type="floating" parent_frame="world" child_link="calib_kuka_arm_base_link" />
+
+    <disable_collisions link1="thproximal" link2="thmiddle" reason="Adjacent" />
+    <disable_collisions link1="palm" link2="ffproximal" reason="Adjacent" />
+    <disable_collisions link1="palm" link2="mfproximal" reason="Adjacent" />
+    <disable_collisions link1="palm" link2="rfproximal" reason="Adjacent" />
+    <disable_collisions link1="palm" link2="thproximal" reason="Adjacent" />
+    <disable_collisions link1="palm" link2="lfknuckle" reason="Adjacent" />
+    <disable_collisions link1="kuka_arm_5_link" link2="kuka_arm_6_link" reason="Adjacent" />
+    <disable_collisions link1="kuka_arm_6_link" link2="kuka_arm_7_link" reason="Adjacent" />
+</robot>
+

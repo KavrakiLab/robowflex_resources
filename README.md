@@ -18,4 +18,6 @@ List of all resources, their source repositories (if available), and what commit
 | Panda              | https://github.com/frankaemika/franka_ros               | edba362bc216d7169f14801c92af70f4291a0f76 |
 |                    | https://github.com/ros-planning/panda_moveit_config     | 27756a1f5a174f58b644e3670246b31a707ba828 |
 | ABB YuMi           | https://github.com/OrebroUniversity/yumi                | fb7f57df05444e6a28df6eda26034de730b8f8fe |
+| Shadowhand         | https://github.com/shadow-robot/sr_common               | 62015b1576fe66f099d41f6fb87fa00a3ab98931 |
+
 
