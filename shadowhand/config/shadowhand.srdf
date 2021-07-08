@@ -25,6 +25,7 @@
         <group name="finger_lf" />
         <group name="finger_mf" />
         <group name="finger_rf" />
+        <group name="wrist" />
     </group>
 
     <group name="finger_fftip">
