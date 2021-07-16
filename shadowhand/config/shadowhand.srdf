@@ -25,7 +25,6 @@
         <group name="finger_lf" />
         <group name="finger_mf" />
         <group name="finger_rf" />
-        <group name="wrist" />
     </group>
 
     <group name="finger_fftip">
@@ -60,5 +59,6 @@
     <disable_collisions link1="palm" link2="lfknuckle" reason="Adjacent" />
     <disable_collisions link1="kuka_arm_5_link" link2="kuka_arm_6_link" reason="Adjacent" />
     <disable_collisions link1="kuka_arm_6_link" link2="kuka_arm_7_link" reason="Adjacent" />
+    <disable_collisions link1="kuka_arm_7_link" link2="wrist" reason="Adjacent" />
 </robot>
 
