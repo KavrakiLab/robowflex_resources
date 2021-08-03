@@ -66,7 +66,7 @@ arm_left:
     - PRMkConfigDefault
     - PRMstarkConfigDefault
   projection_evaluator: joints(arm_left_1_joint,arm_left_2_joint)
-  longest_valid_segment_fraction: 0.02
+  longest_valid_segment_fraction: 0.01
 arm_right:
   planner_configs:
     - SBLkConfigDefault
@@ -81,7 +81,7 @@ arm_right:
     - PRMkConfigDefault
     - PRMstarkConfigDefault
   projection_evaluator: joints(arm_right_1_joint,arm_right_2_joint)
-  longest_valid_segment_fraction: 0.02
+  longest_valid_segment_fraction: 0.01
 head:
   planner_configs:
     - SBLkConfigDefault
@@ -96,7 +96,7 @@ head:
     - PRMkConfigDefault
     - PRMstarkConfigDefault
   projection_evaluator: joints(head_1_joint,head_2_joint)
-  longest_valid_segment_fraction: 0.02
+  longest_valid_segment_fraction: 0.01
 gripper_left:
   planner_configs:
     - SBLkConfigDefault
