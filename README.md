@@ -19,5 +19,5 @@ List of all resources, their source repositories (if available), and what commit
 |                    | https://github.com/ros-planning/panda_moveit_config     | 27756a1f5a174f58b644e3670246b31a707ba828 |
 | ABB YuMi           | https://github.com/OrebroUniversity/yumi                | fb7f57df05444e6a28df6eda26034de730b8f8fe |
 | Shadowhand         | https://github.com/shadow-robot/sr_common               | 62015b1576fe66f099d41f6fb87fa00a3ab98931 |
-
+| Care-O-Bot4        | https://github.com/ipa320/cob_robots                    | e5461f9201a8e879204a1a65262eb094ec0b9a80 |
 
