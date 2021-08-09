@@ -1,0 +1,12 @@
+# Care-O-Bot4 robot
+urdf: "package://robowflex_resources/cob/robots/cob4-8.urdf.xacro"
+srdf: "package://robowflex_resources/cob/config/cob4-8.srdf"
+joint_limits: "package://robowflex_resources/cob/config/joint_limits.yaml"
+kinematics: "package://robowflex_resources/cob/config/kinematics.yaml"
+
+# Default robot state
+robot_state:
+  joint_state:
+    name: [fl_caster_rotation_joint, fl_caster_r_wheel_joint, b_caster_rotation_joint, b_caster_r_wheel_joint, fr_caster_rotation_joint, fr_caster_r_wheel_joint, head_1_joint, head_2_joint, head_3_joint, sensorring_joint, arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint, gripper_right_finger_1_joint, gripper_right_finger_2_joint, gripper_left_finger_1_joint, gripper_left_finger_2_joint]
+    position: [0.0, 0.11, 3.14, 0.10, 0.0, 0.11, 0.0, 0.0, 0.0, 0.0, -0.73, -1.50, -0.36, -1.50, 0.82, -1.93, 1.43, 2.36, 1.48, 2.88, -1.5, 0.77, -1.87, -1.64, -1.0, 1.2, -1.0, 1.2]
+
