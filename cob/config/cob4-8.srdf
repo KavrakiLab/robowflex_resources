@@ -15,6 +15,10 @@
     <group name="arm_right">
         <chain base_link="arm_right_base_link" tip_link="arm_right_7_link" />
     </group>
+    <group name="both_arms">
+        <group name="arm_left" />
+        <group name="arm_right" />
+    </group>
     <group name="head">
         <chain base_link="head_base_link" tip_link="head_center_link" />
     </group>
@@ -29,22 +33,38 @@
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home_left" group="arm_left">
-        <joint name="arm_left_1_joint" value="0" />
-        <joint name="arm_left_2_joint" value="0" />
-        <joint name="arm_left_3_joint" value="0" />
-        <joint name="arm_left_4_joint" value="0" />
-        <joint name="arm_left_5_joint" value="0" />
-        <joint name="arm_left_6_joint" value="0" />
-        <joint name="arm_left_7_joint" value="0" />
+        <joint name="arm_left_1_joint" value="-4.20" />
+        <joint name="arm_left_2_joint" value="1.47" />
+        <joint name="arm_left_3_joint" value="-2.94" />
+        <joint name="arm_left_4_joint" value="-1.50" />
+        <joint name="arm_left_5_joint" value="0.52" />
+        <joint name="arm_left_6_joint" value="-1.62" />
+        <joint name="arm_left_7_joint" value="-1.31" />
     </group_state>
     <group_state name="home_right" group="arm_right">
-        <joint name="arm_right_1_joint" value="0" />
-        <joint name="arm_right_2_joint" value="0" />
-        <joint name="arm_right_3_joint" value="0" />
-        <joint name="arm_right_4_joint" value="0" />
-        <joint name="arm_right_5_joint" value="0" />
-        <joint name="arm_right_6_joint" value="0" />
-        <joint name="arm_right_7_joint" value="0" />
+        <joint name="arm_right_1_joint" value="2.32" />
+        <joint name="arm_right_2_joint" value="1.47" />
+        <joint name="arm_right_3_joint" value="2.94" />
+        <joint name="arm_right_4_joint" value="-1.50" />
+        <joint name="arm_right_5_joint" value="0.75" />
+        <joint name="arm_right_6_joint" value="-1.83" />
+        <joint name="arm_right_7_joint" value="1.54" />
+    </group_state>
+    <group_state name="home_both" group="both_arms">
+        <joint name="arm_left_1_joint" value="-4.20" />
+        <joint name="arm_left_2_joint" value="1.47" />
+        <joint name="arm_left_3_joint" value="-2.94" />
+        <joint name="arm_left_4_joint" value="-1.50" />
+        <joint name="arm_left_5_joint" value="0.52" />
+        <joint name="arm_left_6_joint" value="-1.62" />
+        <joint name="arm_left_7_joint" value="-1.31" />
+        <joint name="arm_right_1_joint" value="2.32" />
+        <joint name="arm_right_2_joint" value="1.47" />
+        <joint name="arm_right_3_joint" value="2.94" />
+        <joint name="arm_right_4_joint" value="-1.50" />
+        <joint name="arm_right_5_joint" value="0.75" />
+        <joint name="arm_right_6_joint" value="-1.83" />
+        <joint name="arm_right_7_joint" value="1.54" />
     </group_state>
     <group_state name="home_head" group="head">
         <joint name="head_1_joint" value="0" />
