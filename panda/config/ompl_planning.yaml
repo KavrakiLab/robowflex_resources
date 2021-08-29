@@ -122,7 +122,6 @@ planner_configs:
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
   TrajOptDefault:
     type: geometric::TrajOpt
-
 panda_arm:
   default_planner_config: RRTConnectkConfigDefault
   planner_configs:
@@ -150,6 +149,7 @@ panda_arm:
     - SPARSkConfigDefault
     - SPARStwokConfigDefault
     - TrajOptDefault
+  projection_evaluator: link(panda_link8)
 panda_arm_hand:
   planner_configs:
     - SBLkConfigDefault
@@ -176,6 +176,7 @@ panda_arm_hand:
     - SPARSkConfigDefault
     - SPARStwokConfigDefault
     - TrajOptDefault
+  projection_evaluator: link(panda_link8)
 hand:
   planner_configs:
     - SBLkConfigDefault
