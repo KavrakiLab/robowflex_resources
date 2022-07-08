@@ -1,5 +1,3 @@
-#!/usr/bin/env -S blender --background --python
-
 import bpy
 from bpy.app.handlers import persistent
 import subprocess
@@ -26,15 +24,19 @@ def load_handler(dummy):
 
         # Select and export mesh as COLLADA file.
         ob.select_set(True)
-        bpy.ops.wm.collada_export(filepath=os.path.abspath(
-            f'../objects/{filename}/{ob.data.name}.dae'),
-                                  selected=True)
+
+        bpy.ops.object.transform_apply(location=True,
+                                       rotation=True,
+                                       scale=True)
+
+        bpy.ops.wm.collada_export(
+            filepath=os.path.abspath(f'../objects/{filename}/{ob.name}.dae'),
+            selected=True)
         ob.select_set(False)
 
-        # Get object properties
-        scale = list(ob.scale)
-        position = list(ob.matrix_world.to_translation())
-        q = list(ob.matrix_world.to_quaternion())
+        scale = [1, 1, 1]
+        position = list(ob.location)
+        q = list(ob.rotation_quaternion)
         quaternion = q[1:] + q[:1]  # Rotate quaternion to XYZW order
 
         # Add object to scene.
@@ -43,7 +45,7 @@ def load_handler(dummy):
             ob.data.name,
             'meshes': [{
                 'resource':
-                f'package://robowflex_resources/objects/{filename}/{ob.data.name}.dae',
+                f'package://robowflex_resources/objects/{filename}/{ob.name}.dae',
                 'dimensions': scale
             }],
             'mesh_poses': [{
