@@ -31,13 +31,6 @@
         <joint name="joint_head_tilt" />
         <link name="camera_link"/>
     </group>
-    <group name="mobile_base">
-        <joint name="base_joint" /> <!-- planar_joint must have planar type -->
-    </group>
-    <group name="mobile_base_manipulator">
-        <group name="stretch_arm" />
-        <group name="mobile_base" />
-    </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home" group="stretch_arm">
         <joint name="joint_arm_l0" value="0"/>
