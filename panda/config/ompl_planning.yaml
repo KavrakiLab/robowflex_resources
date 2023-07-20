@@ -135,6 +135,7 @@ panda_arm:
     - KPIECEkConfigDefault
     - RRTkConfigDefault
     - RRTConnectkConfigDefault
+    - RRTConnectkConfigRange2
     - RRTstarkConfigDefault
     - TRRTkConfigDefault
     - PRMkConfigDefault
